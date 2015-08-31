@@ -7,6 +7,9 @@ public class UpdateUI : MonoBehaviour {
 	[SerializeField]
 	private Text timerLabel;
 	
+	[SerializeField]
+	private Text coinsLabel;
+	
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +18,7 @@ public class UpdateUI : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		timerLabel.text = FormatTime (GameManager.Instance.TimeRemaining);
+		coinsLabel.text = GameManager.Instance.NumCoins.ToString ();
 	}
 	
 	private string FormatTime(float timeInSeconds)

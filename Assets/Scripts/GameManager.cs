@@ -10,8 +10,16 @@ public class GameManager : Singleton<GameManager> {
 		get { return _timeRemaining; }
 		set { _timeRemaining = value; }
 	}
+
+	[SerializeField]
+	private int _numCoins;
 	
-	private float maxTime = 1 * 60; // In seconds.
+	public int NumCoins {
+		get { return _numCoins; }
+		set { _numCoins = value; }
+	}
+	
+	private float maxTime = 5 * 60; // In seconds.
 	
 	// Use this for initialization
 	void Start () {

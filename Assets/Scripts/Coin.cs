@@ -15,6 +15,14 @@ public class Coin : MonoBehaviour {
 	private float startingY;
 	private bool isMovingUp = true;
 	
+	void OnTriggerEnter(Collider collider)
+	{
+		if (collider.gameObject.tag == "Player")
+		{
+			Pickup();
+		}
+	}
+	
 	// Use this for initialization
 	void Start () {
 		startingY = transform.position.y;
@@ -24,6 +32,12 @@ public class Coin : MonoBehaviour {
 	void Update() {
 		Spin ();
 		Float ();
+	}
+	
+	private void Pickup()
+	{
+		GameManager.Instance.NumCoins++;
+		Destroy (gameObject);
 	}
 	
 	private void Spin()
