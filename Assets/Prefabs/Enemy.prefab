@@ -286,6 +286,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 497846}
   - 65: {fileID: 6597844}
+  - 114: {fileID: 11474626}
   m_Layer: 0
   m_Name: Top Trigger
   m_TagString: Untagged
@@ -629,6 +630,17 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 1
+--- !u!114 &11474626
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00907e2e0219c4cbca972ebb19452279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11497840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -643,6 +655,7 @@ MonoBehaviour:
   rotationSpeed: 180
   movementSpeed: 1
   meshRadius: 1
+  animationComponent: {fileID: 0}
 --- !u!137 &13721298
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

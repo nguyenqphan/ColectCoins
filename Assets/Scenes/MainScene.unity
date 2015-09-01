@@ -2703,6 +2703,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11497840, guid: 2bec1ef9b5ae3294d84c2160c64a9cc3, type: 2}
+      propertyPath: animationComponent
+      value: 
+      objectReference: {fileID: 1961922380}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bec1ef9b5ae3294d84c2160c64a9cc3, type: 2}
   m_IsPrefabParent: 0
@@ -3057,6 +3061,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c62d2343c8edfd044844e7d24a80fd95, type: 2}
   m_IsPrefabParent: 0
+--- !u!111 &1961922380 stripped
+Animation:
+  m_PrefabParentObject: {fileID: 11133362, guid: 2bec1ef9b5ae3294d84c2160c64a9cc3,
+    type: 2}
+  m_PrefabInternal: {fileID: 1813033191}
 --- !u!1 &1964037566
 GameObject:
   m_ObjectHideFlags: 0
